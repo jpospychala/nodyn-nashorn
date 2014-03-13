@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.projectodd</groupId>
-  <artifactId>nodyn</artifactId>
+  <groupId>io.vertx</groupId>
+  <artifactId>nodyn-dynjs-parent</artifactId>
   <version>0.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Nodyn</name>
@@ -19,8 +19,8 @@
   </parent>
 
   <scm>
-    <connection>scm:git:git://github.com/projectodd/nodyn.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/projectodd/nodyn.git</developerConnection>
+    <connection>scm:git:git://github.com/vert-x/nodyn-dynjs.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/vert-x/nodyn-dynjs.git</developerConnection>
     <url>http://github.com/projectodd/node</url>
   </scm>
 
@@ -59,7 +59,7 @@
 
     <!-- dependency versions -->
     <version.junit>4.7</version.junit>
-    <!-- TODO: Remove the netty dependency (QueryString) -->
+    <!-- NASTY! TODO: Remove the netty dependency (QueryString) -->
     <version.netty>3.6.1.Final</version.netty>
     <version.vertx>2.1RC1</version.vertx>
     <version.hazelcast>2.6.6</version.hazelcast>
@@ -122,16 +122,19 @@
       <groupId>org.dynjs</groupId>
       <artifactId>dynjs</artifactId>
       <version>${version.dynjs}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.projectodd</groupId>
       <artifactId>dynjs-npm</artifactId>
       <version>${version.dynjs-npm}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>lang-js</artifactId>
       <version>${version.lang-js.verticle}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

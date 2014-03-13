@@ -3,11 +3,11 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.projectodd</groupId>
-  <artifactId>nodyn-verticle</artifactId>
+  <groupId>io.vertx</groupId>
+  <artifactId>nodyn-dynjs</artifactId>
   <version>0.1.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>nodyn-verticle</name>
+  <name>nodyn-dynjs</name>
   <url>http://www.nodyn.io</url>
 
   <description>
@@ -15,8 +15,8 @@
   </description>
 
   <parent>
-    <groupId>org.projectodd</groupId>
-    <artifactId>nodyn</artifactId>
+    <groupId>io.vertx</groupId>
+    <artifactId>nodyn-dynjs-parent</artifactId>
     <version>0.1.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent> 
@@ -42,21 +42,26 @@
       <groupId>io.vertx</groupId>
       <artifactId>lang-dynjs</artifactId>
       <version>${version.dynjs.verticle}</version>
+      <scope>provided</scope>
     </dependency>
+      <!--
     <dependency>
 	   <groupId>org.apache.commons</groupId>
 	   <artifactId>commons-lang3</artifactId>
 	   <version>${version.commons.lang}</version>
 	  </dependency>
+	  -->
     <dependency>
       <groupId>org.projectodd</groupId>
       <artifactId>dynjs-npm</artifactId>
       <version>${version.dynjs-npm}</version>
+      <scope>provided</scope>
     </dependency>
       <dependency>
           <groupId>org.dynjs</groupId>
           <artifactId>dynjs</artifactId>
           <version>0.2.2</version>
+          <scope>provided</scope>
       </dependency>
   </dependencies>
 

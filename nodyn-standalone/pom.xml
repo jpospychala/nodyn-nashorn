@@ -15,8 +15,8 @@
   </description>
 
   <parent>
-    <groupId>org.projectodd</groupId>
-    <artifactId>nodyn</artifactId>
+    <groupId>io.vertx</groupId>
+    <artifactId>nodyn-dynjs-parent</artifactId>
     <version>0.1.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent> 

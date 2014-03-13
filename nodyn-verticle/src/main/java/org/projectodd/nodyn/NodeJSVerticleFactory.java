@@ -37,6 +37,7 @@ public class NodeJSVerticleFactory extends DynJSVerticleFactory {
     }
 
     public static void initScript(ExecutionContext context, String name, DynJS runtime) {
+        System.out.println("Trying to load script: " + name);
         InputStream is = runtime.getConfig().getClassLoader().getResourceAsStream(name);
         if (is != null) {
             BufferedReader reader = new BufferedReader(new InputStreamReader(is));
@@ -47,7 +48,8 @@ public class NodeJSVerticleFactory extends DynJSVerticleFactory {
                 // ignore
             }
         } else {
-            System.err.println("[ERROR] Cannot initialize Nodyn.");
+            //System.err.println("[ERROR] Cannot initialize Nodyn.");
+            System.err.println("Cannot find script " + name + " on classpath");
         }
     }
 
