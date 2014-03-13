@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.vertx</groupId>
-  <artifactId>nodyn-dynjs</artifactId>
+  <artifactId>nodyn-nashorn</artifactId>
   <version>0.1.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>nodyn-dynjs</name>
+  <name>nodyn-nashorn</name>
   <url>http://www.nodyn.io</url>
 
   <description>
@@ -16,7 +16,7 @@
 
   <parent>
     <groupId>io.vertx</groupId>
-    <artifactId>nodyn-dynjs-parent</artifactId>
+    <artifactId>nodyn-nashorn-parent</artifactId>
     <version>0.1.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent> 
